@@ -1,0 +1,195 @@
+.iphone{
+  margin: auto;
+  border: 10px solid black;
+  border-radius: 40px;
+  width: 320px;
+  height: 700px;
+  position: relative;
+  box-shadow: 0 20px 15px #33333335;
+}
+
+.screen{
+  z-index: 10;
+  position: absolute;
+  background: url('https://media.idownloadblog.com/wp-content/uploads/2020/10/iPhone-12-dark-black-wallpaper.png');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.icons{
+  margin-top: 40px;
+  justify-content: center;
+  display: flex;
+}
+
+.icons div{
+  margin: 10px;
+  z-index: 100;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px #33333340;
+  cursor: pointer;
+  transform: transform 400ms ease-in-out;
+}
+
+.icons p{
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 55px;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: bold;
+}
+
+.app:nth-child(1){
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png');
+  background-size: cover;
+}
+.app:nth-child(2){
+  background: url('https://cdn.jim-nielsen.com/ios/512/calculator-2017-10-10.png');
+  background-size: cover;
+}
+.app:nth-child(3){
+  background: url('https://static.wikia.nocookie.net/logopedia/images/3/37/Weatherios15beta.png');
+  background-size: cover;
+}
+.app:nth-child(4){
+  background: url('https://cdn.dribbble.com/users/648987/screenshots/2342392/attachments/447167/calendar_2x.png');
+  background-size: cover;
+}
+.app_2_row:nth-child(1){
+  background: url('https://cdn.jim-nielsen.com/watchos/512/reminders-2020-03-09.png');
+  background-size: cover;
+}
+
+.app_2_row:nth-child(2){
+  background: url('https://cdn.jim-nielsen.com/ios/512/notes-2017-09-26.png');
+  background-size: cover;
+}
+
+.app_2_row:nth-child(3){
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/1200px-Spotify_App_Logo.svg.png');
+  background-size: cover;
+}
+
+.app_2_row:nth-child(4){
+  background: url('https://www.apple.com/v/maps/d/images/overview/intro_icon__dfyvjc1ohbcm_large.png');
+  background-size: cover;
+}
+
+.app_3_row:nth-child(1){
+  background: url('https://static.wikia.nocookie.net/logopedia/images/d/d4/Clock_iOS_15_Beta.png');
+  background-size: cover;
+}
+.app_3_row:nth-child(2){
+  background: url('https://cdn.jim-nielsen.com/ios/512/facebook-2019-05-21.png');
+  background-size: cover;
+}
+.app_3_row:nth-child(3){
+  background: url('https://cdn.jim-nielsen.com/ios/512/google-2015-10-22.png');
+  background-size: cover;
+}
+.app_3_row:nth-child(4){
+  background: url('https://cdn.jim-nielsen.com/ios/512/netflix-2018-11-01.png');
+  background-size: cover;
+}
+
+.app_4_row:nth-child(1){
+  background: url('https://static.wikia.nocookie.net/ipod/images/e/e7/YouTube_iOS_2019.png');
+  background-size: cover;
+}
+
+.app_4_row:nth-child(2){
+  background: url('https://www.nicepng.com/png/full/151-1515710_flappy-bird-png-flappy-bird-icon-png.png');
+  background-size: cover;
+}
+
+.icons div:hover{
+  transform: scale(0.8);
+}
+
+.notch{
+  z-index: 500;
+  top: 0;
+  left: 62px;
+  position: absolute;
+  background: #000000;
+  width: 200px;
+  height: 30px;
+  border-radius: 0 0 20px 20px;
+}
+
+.camera{
+  position: absolute;
+  bottom: 8px;
+  right: 20px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: .2rem solid #1e1f22;
+  background: #447bb5a6;
+}
+
+.speaker{
+  position: absolute;
+  right: 3.9rem;
+  width: 5.2rem;
+  height: .6rem;
+  background: #333333;
+  border-radius: .2rem;
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 40; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  border: 10px solid black;
+  background-color: #fefefe;
+  margin: auto;
+  width: 320px;
+  height: 700px;
+  border-radius: 40px;
+  margin-top: 9px;
+  overflow: hidden;
+
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: left;
+  font-size: 75px;
+  font-weight: bold;
+  margin-top: -30%;
+  margin-left: 40%;
+  z-index: 500;
+  position: relative;
+
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+iframe{}
+

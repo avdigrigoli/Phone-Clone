@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phone Clone</title>
+
+  <link rel="stylesheet" href="Phone-Clone/phoneBase/style.css">
+</head>
+<body style="background: linear-gradient(navy, purple)">
+  <div class="iphone">
+    <div class="screen">
+      <div class="icons">
+        <div class="app" id="instagramBtn"><p>Instagram</p></div>
+        <div class="app" id="calculatorBtn"><p>Calculator</p></div>
+        <div class="app" id="weatherBtn"><p>Weather</p></div>
+        <div class="app" id="calendarBtn"><p>Calendar</p></div>
+      </div>
+      <div class="icons">
+        <div class="app_2_row" id="reminderBtn"><p>Reminders</p></div>
+        <div class="app_2_row" id="notesBtn"><p>Notes</p></div>
+        <div class="app_2_row" id="spotifyBtn"><p>Spotify</p></div>
+        <div class="app_2_row" id="mapBtn"><p>Maps</p></div>
+      </div>
+      <div class="icons">
+        <div class="app_3_row" id="clockBtn"><p>Clock</p></div>
+        <div class="app_3_row" id="fbBtn"><p>Facebook</p></div>
+        <div class="app_3_row" id="googleBtn"><p>Google</p></div>
+        <div class="app_3_row" id="netflixBtn"><p>Netflix</p></div>
+      </div>
+      <div class="icons">
+        <div class="app_4_row" id="youtubeBtn"><p>YouTube</p></div>
+        <div class="app_4_row" id="flappyBtn"><p>Flappy Bird</p></div>
+        <div class="app_4_row"></div>
+        <div class="app_4_row"></div>
+      </div>
+      <div class="notch">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="instagramModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="https://www.instagram.com/instagram/embed" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="calculatorModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="Phone-Clone/calculatorApp/index.html" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="weatherModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="Phone-Clone/weatherApp/index.html" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="calendarModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="Phone-Clone/calApp/index.html" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="reminderModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="Phone-Clone/remindersApp/index.html" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="notesModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="Phone-Clone/notesApp/index.html" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="spotifyModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="Phone-Clone/musicApp/index.html" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="mapModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="Phone-Clone/mapApp/index.html" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="clockModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="Phone-Clone/clockApp/index.html" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="fbModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="Phone-Clone/facebook-clone/index.html" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="googleModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="Phone-Clone/google-clone/index.html" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="netflixModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="Phone-Clone/netflix-clone/index.html" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="youtubeModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="Phone-Clone/youtube-clone/index.html" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="flappyModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <iframe src="Phone-Clone/flappyBird/index.html" style="width: 337px; height: 100%; border-radius: 30px; border: 0 solid black;
+"></iframe>
+      <span class="close">__</span>
+      <div class="notch" style="position: relative; top: -101%;">
+        <div class="camera"></div>
+        <div class="speaker"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("instagramModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("instagramBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+
+
+  <script>
+    // Get the modal
+    var modal1 = document.getElementById("calculatorModal");
+
+    // Get the button that opens the modal
+    var btn1 = document.getElementById("calculatorBtn");
+
+    // Get the <span> element that closes the modal
+    var span1 = document.getElementsByClassName("close")[1];
+
+    // When the user clicks the button, open the modal
+    btn1.onclick = function() {
+      modal1.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span1.onclick = function() {
+      modal1.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal1) {
+        modal1.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal2 = document.getElementById("weatherModal");
+
+    // Get the button that opens the modal
+    var btn2 = document.getElementById("weatherBtn");
+
+    // Get the <span> element that closes the modal
+    var span2 = document.getElementsByClassName("close")[2];
+
+    // When the user clicks the button, open the modal
+    btn2.onclick = function() {
+      modal2.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span2.onclick = function() {
+      modal2.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal2) {
+        modal2.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal3 = document.getElementById("calendarModal");
+
+    // Get the button that opens the modal
+    var btn3 = document.getElementById("calendarBtn");
+
+    // Get the <span> element that closes the modal
+    var span3 = document.getElementsByClassName("close")[3];
+
+    // When the user clicks the button, open the modal
+    btn3.onclick = function() {
+      modal3.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span3.onclick = function() {
+      modal3.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal3) {
+        modal3.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal4 = document.getElementById("reminderModal");
+
+    // Get the button that opens the modal
+    var btn4 = document.getElementById("reminderBtn");
+
+    // Get the <span> element that closes the modal
+    var span4 = document.getElementsByClassName("close")[4];
+
+    // When the user clicks the button, open the modal
+    btn4.onclick = function() {
+      modal4.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span4.onclick = function() {
+      modal4.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal4) {
+        modal4.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal5 = document.getElementById("notesModal");
+
+    // Get the button that opens the modal
+    var btn5 = document.getElementById("notesBtn");
+
+    // Get the <span> element that closes the modal
+    var span5 = document.getElementsByClassName("close")[5];
+
+    // When the user clicks the button, open the modal
+    btn5.onclick = function() {
+      modal5.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span5.onclick = function() {
+      modal5.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal5) {
+        modal5.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal6 = document.getElementById("spotifyModal");
+
+    // Get the button that opens the modal
+    var btn6 = document.getElementById("spotifyBtn");
+
+    // Get the <span> element that closes the modal
+    var span6 = document.getElementsByClassName("close")[6];
+
+    // When the user clicks the button, open the modal
+    btn6.onclick = function() {
+      modal6.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span6.onclick = function() {
+      modal6.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal6) {
+        modal6.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal7 = document.getElementById("mapModal");
+
+    // Get the button that opens the modal
+    var btn7 = document.getElementById("mapBtn");
+
+    // Get the <span> element that closes the modal
+    var span7 = document.getElementsByClassName("close")[7];
+
+    // When the user clicks the button, open the modal
+    btn7.onclick = function() {
+      modal7.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span7.onclick = function() {
+      modal7.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal7) {
+        modal7.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal8 = document.getElementById("clockModal");
+
+    // Get the button that opens the modal
+    var btn8 = document.getElementById("clockBtn");
+
+    // Get the <span> element that closes the modal
+    var span8 = document.getElementsByClassName("close")[8];
+
+    // When the user clicks the button, open the modal
+    btn8.onclick = function() {
+      modal8.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span8.onclick = function() {
+      modal8.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal8) {
+        modal8.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal9 = document.getElementById("fbModal");
+
+    // Get the button that opens the modal
+    var btn9 = document.getElementById("fbBtn");
+
+    // Get the <span> element that closes the modal
+    var span9 = document.getElementsByClassName("close")[9];
+
+    // When the user clicks the button, open the modal
+    btn9.onclick = function() {
+      modal9.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span9.onclick = function() {
+      modal9.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal9) {
+        modal9.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal10 = document.getElementById("googleModal");
+
+    // Get the button that opens the modal
+    var btn10 = document.getElementById("googleBtn");
+
+    // Get the <span> element that closes the modal
+    var span10 = document.getElementsByClassName("close")[10];
+
+    // When the user clicks the button, open the modal
+    btn10.onclick = function() {
+      modal10.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span10.onclick = function() {
+      modal10.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal10) {
+        modal10.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal11 = document.getElementById("netflixModal");
+
+    // Get the button that opens the modal
+    var btn11 = document.getElementById("netflixBtn");
+
+    // Get the <span> element that closes the modal
+    var span11 = document.getElementsByClassName("close")[11];
+
+    // When the user clicks the button, open the modal
+    btn11.onclick = function() {
+      modal11.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span11.onclick = function() {
+      modal11.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal11) {
+        modal11.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal12 = document.getElementById("youtubeModal");
+
+    // Get the button that opens the modal
+    var btn12 = document.getElementById("youtubeBtn");
+
+    // Get the <span> element that closes the modal
+    var span12 = document.getElementsByClassName("close")[12];
+
+    // When the user clicks the button, open the modal
+    btn12.onclick = function() {
+      modal12.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span12.onclick = function() {
+      modal12.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal12) {
+        modal12.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    // Get the modal
+    var modal13 = document.getElementById("flappyModal");
+
+    // Get the button that opens the modal
+    var btn13 = document.getElementById("flappyBtn");
+
+    // Get the <span> element that closes the modal
+    var span13 = document.getElementsByClassName("close")[13];
+
+    // When the user clicks the button, open the modal
+    btn13.onclick = function() {
+      modal13.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span13.onclick = function() {
+      modal13.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal13) {
+        modal13.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
